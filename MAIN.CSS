@@ -1,0 +1,169 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+header {
+    height: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5CB9FF
+}
+
+
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu {
+    font-size: 1.5rem;
+    justify-content: space-around;
+    color: white;
+    letter-spacing: 1px;
+}
+a {
+    cursor: pointer;
+}
+
+a.button {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+a.button:hover {
+    background-color: white;
+    color: black;
+}
+#logo
+{
+    font-size: 2em;
+    color:white;
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+    #logo img {
+        max-height: 50%; /* Puoi cambiare questo valore a seconda delle tue esigenze */
+        margin-right: 10px;
+    }
+
+
+#menu_mobile {
+    display: none;
+}
+
+#main {
+    display: flex;
+    background-color: #DB1560;
+    justify-content: space-between
+}
+
+#main a.button {
+    background-color: white;
+    color: black;
+}
+
+#img {
+    flex: 1 1 40%;
+    padding-right: 2rem;
+    margin-left: 10%;
+}
+
+    #img img{
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+#Sec_descr {
+    flex: 1 1 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#Sec_descr h1 {
+    margin-top: 0;
+}
+
+
+#art-funct {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.sec-flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.functions {
+    /*border: 2px solid black;*/
+    height: 30%;
+    width: 30%;
+}
+#menu_mobile div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px){
+    body{
+        font-size:14px;
+    }
+    #menu{
+        display: none;
+    }
+    #menu_mobile{
+        display: block;
+    }
+    nav #logo
+    {
+        text-align:center;
+        font-size: 24px;    
+    }
+    #logo img {
+       display:none;
+    }
+
+    #main {
+        flex-direction: column;
+        text-align:center;
+    }
+
+
+
+    #art-funct {
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+
+
+    .functions {
+        /*border: 2px solid black;*/
+       
+        width: 30%;
+    }
+}
